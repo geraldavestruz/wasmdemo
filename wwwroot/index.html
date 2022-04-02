@@ -42,6 +42,65 @@
           }
         });
       </script>
+      <!-- Start Single Page Apps for GitHub Pages -->
+2
+<script type="text/javascript">
+    3
+            // Single Page Apps for GitHub Pages
+    4
+            // https://github.com/rafrex/spa-github-pages
+    5
+            // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+    6
+            // ----------------------------------------------------------------------
+    7
+            // This script checks to see if a redirect is present in the query string
+    8
+            // and converts it back into the correct url and adds it to the
+    9
+            // browser's history using window.history.replaceState(...),
+    10
+            // which won't cause the browser to attempt to load the new url.
+    11
+            // When the single page app is loaded further down in this file,
+    12
+            // the correct url will be waiting in the browser's history for
+    13
+            // the single page app to route accordingly.
+    14
+            (function (l) {
+    15
+                if (l.search) {
+    16
+                    var q = {};
+    17
+                    l.search.slice(1).split('&').forEach(function (v) {
+    18
+                        var a = v.split('=');
+    19
+                        q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+    20
+                    });
+    21
+                    if (q.p !== undefined) {
+    22
+                        window.history.replaceState(null, null,
+    23
+                            l.pathname.slice(0, -1) + (q.p || '') +
+    24
+                            (q.q ? ('?' + q.q) : '') +
+    25
+                            l.hash
+    26
+                        );
+    27
+                    }
+    28
+                }
+    29
+            }(window.location))
+    30
+        </script>
 </body>
 
 </html>
